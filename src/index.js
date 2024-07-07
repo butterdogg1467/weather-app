@@ -1,9 +1,16 @@
 import fetchApi from "./fetchapi"
-import { search, city, apiKey } from "./fetchweather"
+import fetchWeather from "./fetchweather"
 
 document.addEventListener('DOMContentLoaded', () => {
 
-fetchApi()
+    let searchBtn = document.querySelector('#searchbutton')
+
+    fetchApi()
+
+searchBtn.addEventListener('click', function(){
+    fetchWeather()
+})
+
 
 
 
