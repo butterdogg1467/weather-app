@@ -1,3 +1,5 @@
+import formatDate from "./formatedate";
+
 export default function fetchForecast(){
     fetch('http://api.weatherapi.com/v1/forecast.json?key=42830ef394df4aba9fc235453242906&q=' + search.value + '&days=3&aqi=no')
     .then(function(response) {
@@ -5,17 +7,17 @@ export default function fetchForecast(){
     })
     .then(function(data){
         console.log(data)
-        date1.textContent = data.forecast.forecastday[0].date
+        date1.textContent = formatDate(data.forecast.forecastday[0].date)
         avgtemp1.textContent = data.forecast.forecastday[0].day.avgtemp_c
         forecasticon1.src = data.forecast.forecastday[0].day.condition.icon
 
         
-        date2.textContent = data.forecast.forecastday[1].date
+        date2.textContent = formatDate(data.forecast.forecastday[1].date)
         avgtemp2.textContent = data.forecast.forecastday[1].day.avgtemp_c
         forecasticon2.src = data.forecast.forecastday[1].day.condition.icon
 
         
-        date3.textContent = data.forecast.forecastday[2].date
+        date3.textContent = formatDate(data.forecast.forecastday[2].date)
         avgtemp3.textContent = data.forecast.forecastday[2].day.avgtemp_c
         forecasticon3.src = data.forecast.forecastday[2].day.condition.icon
     })

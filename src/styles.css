@@ -99,7 +99,6 @@ body {
 }
 
 .forecastgroup1 {
-    border: 2px solid black;
     align-items: center;
     display: grid;
     justify-content: center;
@@ -108,7 +107,6 @@ body {
 }
 
 .forecastgroup2 {
-    border: 2px solid black;
     align-items: center;
     display: grid;
     justify-content: center;
@@ -117,7 +115,6 @@ body {
 }
 
 .forecastgroup3 {
-    border: 2px solid black;
     align-items: center;
     display: grid;
     justify-content: center;
