@@ -1,5 +1,5 @@
 export default function fetchWeather(){
-    fetch('http://api.weatherapi.com/v1/current.json?key=42830ef394df4aba9fc235453242906&q=' + search.value + '&aqi=no`')
+    fetch('http://api.weatherapi.com/v1/current.json?key=42830ef394df4aba9fc235453242906&q=' + search.value + '&days=3&aqi=no')
     .then(function(response) {
         return response.json();
     })

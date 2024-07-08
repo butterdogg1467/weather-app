@@ -1,6 +1,6 @@
 
     export default function fetchApi() {
-        fetch('http://api.weatherapi.com/v1/current.json?key=42830ef394df4aba9fc235453242906&q=Toronto&aqi=no')
+        fetch('http://api.weatherapi.com/v1/current.json?key=42830ef394df4aba9fc235453242906&days=3&q=Toronto&aqi=no')
         .then(function(response){
             let jsonResponse = response.json()
             console.log('Success!')
