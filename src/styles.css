@@ -1,0 +1,70 @@
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+
+}
+
+#search{
+    grid-column: 1/5;
+}
+
+.searchbutton {
+    grid-column: 5/6;
+}
+
+.cityname {
+    grid-column: 2/5;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.condition {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+
+.temp {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.feelslike {
+    grid-row: 3/4;
+    grid-column: 4/5;
+    text-align: center;
+}
+
+
+.time {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+}
+
+.wind {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    text-align: center;
+}
+
+.gust {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    text-align: center;
+}
+
+
+.conditionicon {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    align-self: center;
+    justify-self: end;
+}
+
+
