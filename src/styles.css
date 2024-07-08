@@ -97,3 +97,34 @@ body {
     grid-column: 1/-1;
     border-radius: 15px;
 }
+
+.forecastgroup1 {
+    border: 2px solid black;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-column: 2/3;
+}
+
+.forecastgroup2 {
+    border: 2px solid black;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    text-align: center;   
+    grid-column: 3/4; 
+}
+
+.forecastgroup3 {
+    border: 2px solid black;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    text-align: center;   
+    grid-column: 4/5; 
+}
+
+.forecasticon {
+    justify-self: center;
+}
