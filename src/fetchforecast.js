@@ -10,16 +10,24 @@ export default function fetchForecast(){
         date1.textContent = formatDate(data.forecast.forecastday[0].date)
         avgtemp1.textContent = data.forecast.forecastday[0].day.avgtemp_c
         forecasticon1.src = data.forecast.forecastday[0].day.condition.icon
-
+        forecastGroup1.style.backgroundColor = '#7DB2C5'
+        forecastGroup1.style.border = 'solid black 2px'
+        forecastGroup1.style.borderRadius = '15px'
         
         date2.textContent = formatDate(data.forecast.forecastday[1].date)
         avgtemp2.textContent = data.forecast.forecastday[1].day.avgtemp_c
         forecasticon2.src = data.forecast.forecastday[1].day.condition.icon
-
+        forecastGroup2.style.backgroundColor = '#7D8EC5'
+        forecastGroup2.style.border = 'solid black 2px'
+        forecastGroup2.style.borderRadius = '15px'
         
         date3.textContent = formatDate(data.forecast.forecastday[2].date)
         avgtemp3.textContent = data.forecast.forecastday[2].day.avgtemp_c
         forecasticon3.src = data.forecast.forecastday[2].day.condition.icon
+        forecastGroup3.style.backgroundColor = '#7DC5B4'
+        forecastGroup3.style.border = 'solid black 2px'
+        forecastGroup3.style.borderRadius = '15px'
+
     })
     .catch(function(err){
         console.log(err)
@@ -37,4 +45,8 @@ const forecasticon2 = document.querySelector('#forecasticon2');
 const date3 = document.querySelector('#date3');
 const avgtemp3 = document.querySelector('#avgtemp3');
 const forecasticon3 = document.querySelector('#forecasticon3');
+
+let forecastGroup1 = document.querySelector('.forecastgroup1')
+let forecastGroup2 = document.querySelector('.forecastgroup2')
+let forecastGroup3 = document.querySelector('.forecastgroup3')
 

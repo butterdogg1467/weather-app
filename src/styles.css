@@ -47,6 +47,10 @@ body {
     text-align: center;
 }
 
+.currentgroup {
+    margin-top: 10px; 
+}
+
 .condition {
     grid-row: 3/4;
     grid-column: 2/3;
@@ -67,11 +71,16 @@ body {
 }
 
 
+.date {
+    text-align: center;
+}
+
 .time {
     grid-column: 2/3;
     grid-row: 4/5;
     text-align: center;
 }
+
 
 .wind {
     grid-column: 3/4;
@@ -104,6 +113,8 @@ body {
     justify-content: center;
     text-align: center;
     grid-column: 2/3;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .forecastgroup2 {
@@ -111,7 +122,8 @@ body {
     display: grid;
     justify-content: center;
     text-align: center;   
-    grid-column: 3/4; 
+    grid-column: 3/4;
+    margin-top: 10px; 
 }
 
 .forecastgroup3 {
@@ -119,7 +131,9 @@ body {
     display: grid;
     justify-content: center;
     text-align: center;   
-    grid-column: 4/5; 
+    grid-column: 4/5;
+    margin-top: 10px; 
+    margin-left: 10px;
 }
 
 .forecasticon {

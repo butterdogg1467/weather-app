@@ -70,7 +70,4 @@ searchBtn.addEventListener('click', function(){
 
 
 
-
-
-
 })
