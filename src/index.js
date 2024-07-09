@@ -1,6 +1,7 @@
 import fetchApi from "./fetchapi"
 import fetchWeather from "./fetchweather"
 import fetchForecast from "./fetchforecast"
+import fetchHourly from "./fetchhourly"
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -11,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 searchBtn.addEventListener('click', function(){
     fetchWeather()
     fetchForecast()
+    fetchHourly()
 })
+
 
 
 
