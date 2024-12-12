@@ -19,7 +19,7 @@ let f= document.querySelector('#f')
 let c = document.querySelector('#c')
 
 export default function fetchWeather(){
-    fetch('http://api.weatherapi.com/v1/current.json?key=42830ef394df4aba9fc235453242906&q=' + search.value + '&days=3&aqi=no')
+    fetch('http://api.weatherapi.com/v1/current.json?key=322ddc56463843cfbf520430241307&q=' + search.value + '&days=3&aqi=no')
     .then(function(response) {
         return response.json();
     })
@@ -30,9 +30,8 @@ export default function fetchWeather(){
         time.textContent = 'Time: ' + cutTime(data.location.localtime)
         condition.textContent = 'Condition: ' + data.current.condition.text
         conditionIcon.src = data.current.condition.icon
-        currentGroup.style.backgroundColor = '#5A9DB5'
-        currentGroup.style.border = 'solid black 2px'
-        currentGroup.style.borderRadius = '15px'
+        currentGroup.style.backgroundColor = 'white'
+        currentGroup.style.border = 'solid black 1px'
         temp.textContent = 'Temperature: ' + data.current.temp_c + '°C' 
         feelsLike.textContent = 'Feels Like: ' + data.current.feelslike_c + '°C'
         wind.textContent = 'Wind: ' + data.current.wind_mph + ' k/ph'

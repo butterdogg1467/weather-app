@@ -1,10 +1,15 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     display: grid;
     height: 100vh;
-    width: 100vw;
+    width:fit-content;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     overflow: scroll;
+    background-color: #87CEEB;
 }
 
 #search{
@@ -14,13 +19,14 @@ body {
     appearance: none;
     background: white;
     border-radius: 15px;
-    border-top: solid black 2px;
-    border-bottom: solid black 2px;
-    border-left: solid black 2px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    border-left: solid black 1px;
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     outline: none;
+    padding-left: 10px;
 }
 
 #searchbutton {
@@ -29,15 +35,16 @@ body {
     appearance: none;
     background: white;
     border-radius: 15px;
-    border-top: solid black 2px;
-    border-bottom: solid black 2px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
     border-right: none;
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    background-color: skyblue;
+    color: skyblue;
+    font-weight: bolder;
 }
 
 #c {
@@ -46,15 +53,16 @@ body {
     appearance: none;
     background: white;
     border-radius: 15px;
-    border-top: solid black 2px;
-    border-bottom: solid black 2px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
     border-left: none;
     border-right: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    background-color: skyblue;
+    color: skyblue;
+    font-weight: bolder;
 }
 
 #f {
@@ -63,83 +71,92 @@ body {
     appearance: none;
     background: white;
     border-radius: 15px;
-    border-top: solid black 2px;
-    border-bottom: solid black 2px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    background-color: skyblue;
+    color: skyblue;
+    font-weight: bolder;
 }
 
 #searchbutton:hover,
 #f:hover,
 #c:hover {
-    filter: brightness(0.90);
-}
-
-.citycondition {
-    grid-column: 2/5;
-    grid-row: 2/3;
-    text-align: center;
+    background-color: #87ceeb;
+    color: white;
 }
 
 .currentgroup {
     margin-top: 10px; 
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.cityname{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    text-align: start;
+    font-size:40px;
 }
 
 .condition {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    text-align: center;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    text-align: start;
 }
 
 .temp {
-    grid-row: 3/4;
-    grid-column: 3/4;
-    text-align: center;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: start;
 }
 
 .feelslike {
     grid-row: 3/4;
-    grid-column: 4/5;
-    text-align: center;
+    grid-column: 2/3;
+    text-align: start;
 }
 
 
 .date {
-    text-align: center;
+    text-align: start;
+    grid-row: 2/3;
+    grid-column: 1/2;
 }
 
 .time {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    text-align: center;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: start;
 }
 
 
 .wind {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 4/5;
-    text-align: center;
+    text-align: start;
 }
 
 .gust {
-    grid-column: 4/5;
-    grid-row: 4/5;
-    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: start;
+    align-self: center;
 }
 
 
 .conditionicon {
-    grid-row: 2/3;
-    grid-column: 4/5;
+    grid-row: 2/4;
+    grid-column: 3/5;
     align-self: center;
-    justify-self: end;
+    justify-self: center;
+    height: 200px;
 }
 
 .currentgroup {
     grid-column: 1/-1;
-    border-radius: 15px;
+    display: grid;
 }
 
 .forecastgroup1 {
@@ -147,7 +164,7 @@ body {
     display: grid;
     justify-content: center;
     text-align: center;
-    grid-column: 2/3;
+    grid-column: 1/2;
     margin-top: 10px;
     margin-right: 10px;
 }
@@ -157,8 +174,8 @@ body {
     display: grid;
     justify-content: center;
     text-align: center;   
-    grid-column: 3/4;
-    margin-top: 10px; 
+    grid-column: 2/3;
+    margin-top: 10px;
 }
 
 .forecastgroup3 {
@@ -166,9 +183,16 @@ body {
     display: grid;
     justify-content: center;
     text-align: center;   
-    grid-column: 4/5;
+    grid-column: 3/4;
     margin-top: 10px; 
     margin-left: 10px;
+}
+
+.forecastgroups {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .forecasticon {
@@ -177,22 +201,34 @@ body {
 
 .hourlyforecast {
     grid-column: 1/-1;
-    grid-row: 5/6;
+    grid-row: 4/5;
     display: grid;
-    border-radius: 15px;
     grid-template-columns: repeat(24, 1fr);
     overflow: scroll;
     height: 200px;
     margin-top: 10px;
+    overflow-y: hidden;
 }
 
-.hour0 {
+#hour0 {
     grid-column: 1/2;
-    border-radius: 15px;
-    height: 30px;
 }
 
 .hour {
-    width: 100px;
+    width: 200px;
     text-align: center;
+    padding-top: 10px;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2000px white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #87CEEB;
+    border: 5px double white;
+  }

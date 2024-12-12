@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="../src/styles.css">
 </head>
 <body>
     <input id='search' type="search" >
@@ -13,10 +12,8 @@
     <button id="f">Imperial</button>
 
     <div class="currentgroup">
-        <div class="citycondition">
-            <h1 class="cityname"></h1>
-            <img class="conditionicon">
-        </div>
+        <h1 class="cityname"></h1>
+        <img class="conditionicon">
         <h1 class="date"></h1>
         <h1 class="time"></h1>
         <h1 class="condition"></h1>
@@ -26,6 +23,7 @@
         <h1 class="gust"></h1>
     </div>
 
+    <div class="forecastgroups">
         <div class="forecastgroup1">
             <img class="forecasticon" id="forecasticon1">
             <h2 class="date" id="date1"></h2>
@@ -43,6 +41,7 @@
             <h2 class="date" id="date3"></h2>
             <h2 class="avgtemp" id="avgtemp3"></h2>
         </div>
+    </div>
 
         <div class="hourlyforecast">
             <div class="hour" id="hour0">

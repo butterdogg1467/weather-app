@@ -125,15 +125,14 @@ let hour23date = document.querySelector('#hour23date');
 let hour23temp = document.querySelector('#hour23temp');
 
 export default function fetchHourly(){
-    fetch('http://api.weatherapi.com/v1/forecast.json?key=42830ef394df4aba9fc235453242906&q=' + search.value + '&aqi=no')
+    fetch('http://api.weatherapi.com/v1/forecast.json?key=322ddc56463843cfbf520430241307&q=' + search.value + '&aqi=no')
     .then(function(response) {
         return response.json();
     })
     .then(function(data){
         console.log(data)
 
-    hourlyforecastcontainer.style.border = 'solid black 2px'
-    hourlyforecastcontainer.style.borderRadius = '15px'
+    hourlyforecastcontainer.style.border = 'solid black 0.5px'
 
     hour0icon.src = data.forecast.forecastday[0].hour[0].condition.icon;
     hour0date.textContent = cutTime(data.forecast.forecastday[0].hour[0].time);
@@ -231,77 +230,124 @@ export default function fetchHourly(){
     hour23date.textContent = cutTime(data.forecast.forecastday[0].hour[23].time);
     hour23temp.textContent = data.forecast.forecastday[0].hour[23].temp_c + '°C';
 
-    hour0.style.border = '2px solid black';
-    hour0.style.borderRadius = '15px';
+    hour0.style.borderRight = '0.5px solid black';
+    hour0.style.borderBottom = '0.5px solid black'
+    hour0.style.borderRadius = '0px';
+    hour0.style.backgroundColor = 'white'
     
-    hour1.style.border = '2px solid black';
-    hour1.style.borderRadius = '15px';
+    hour1.style.borderRight = '0.5px solid black';
+    hour1.style.borderBottom = '0.5px solid black'
+    hour1.style.borderRadius = '0px';
+    hour1.style.backgroundColor = 'white'
     
-    hour2.style.border = '2px solid black';
-    hour2.style.borderRadius = '15px';
+    hour2.style.borderRight = '0.5px solid black';
+    hour2.style.borderBottom = '0.5px solid black'
+    hour2.style.borderRadius = '0px';
+    hour2.style.backgroundColor = 'white'
     
-    hour3.style.border = '2px solid black';
-    hour3.style.borderRadius = '15px';
+    hour3.style.borderRight = '0.5px solid black';
+    hour3.style.borderBottom = '0.5px solid black'
+    hour3.style.borderRadius = '0px';
+    hour3.style.backgroundColor = 'white'
     
-    hour4.style.border = '2px solid black';
-    hour4.style.borderRadius = '15px';
+    hour4.style.borderRight = '0.5px solid black';
+    hour4.style.borderBottom = '0.5px solid black'
+    hour4.style.borderRadius = '0px';
+    hour4.style.backgroundColor = 'white'
     
-    hour5.style.border = '2px solid black';
-    hour5.style.borderRadius = '15px';
+    hour5.style.borderRight = '0.5px solid black';
+    hour5.style.borderBottom = '0.5px solid black'
+    hour5.style.borderRadius = '0px';
+    hour5.style.backgroundColor = 'white'
     
-    hour6.style.border = '2px solid black';
-    hour6.style.borderRadius = '15px';
+    hour6.style.borderRight = '0.5px solid black';
+    hour6.style.borderBottom = '0.5px solid black'
+    hour6.style.borderRadius = '0px';
+    hour6.style.backgroundColor = 'white'
     
-    hour7.style.border = '2px solid black';
-    hour7.style.borderRadius = '15px';
+    hour7.style.borderRight = '0.5px solid black';
+    hour7.style.borderBottom = '0.5px solid black'
+    hour7.style.borderRadius = '0px';
+    hour7.style.backgroundColor = 'white'
     
-    hour8.style.border = '2px solid black';
-    hour8.style.borderRadius = '15px';
+    hour8.style.borderRight = '0.5px solid black';
+    hour8.style.borderBottom = '0.5px solid black'
+    hour8.style.borderRadius = '0px';
+    hour8.style.backgroundColor = 'white'
     
-    hour9.style.border = '2px solid black';
-    hour9.style.borderRadius = '15px';
+    hour9.style.borderRight = '0.5px solid black';
+    hour9.style.borderBottom = '0.5px solid black'
+    hour9.style.borderRadius = '0px';
+    hour9.style.backgroundColor = 'white'
     
-    hour10.style.border = '2px solid black';
-    hour10.style.borderRadius = '15px';
+    hour10.style.borderRight = '0.5px solid black';
+    hour10.style.borderBottom = '0.5px solid black';
+    hour10.style.borderRadius = '0px';
+    hour10.style.backgroundColor = 'white'
     
-    hour11.style.border = '2px solid black';
-    hour11.style.borderRadius = '15px';
+    hour11.style.borderRight = '0.5px solid black';
+    hour11.style.borderBottom = '0.5px solid black';
+    hour11.style.borderRadius = '0px';
+    hour11.style.backgroundColor = 'white'
     
-    hour12.style.border = '2px solid black';
-    hour12.style.borderRadius = '15px';
+    hour12.style.borderRight = '0.5px solid black';
+    hour12.style.borderBottom = '0.5px solid black';
+    hour12.style.borderRadius = '0px';
+    hour12.style.backgroundColor = 'white'
     
-    hour13.style.border = '2px solid black';
-    hour13.style.borderRadius = '15px';
+    hour13.style.borderRight = '0.5px solid black';
+    hour13.style.borderBottom = '0.5px solid black';
+    hour13.style.borderRadius = '0px';
+    hour13.style.backgroundColor = 'white'
     
-    hour14.style.border = '2px solid black';
-    hour14.style.borderRadius = '15px';
+    hour14.style.borderRight = '0.5px solid black';
+    hour14.style.borderBottom = '0.5px solid black';
+    hour14.style.borderRadius = '0px';
+    hour14.style.backgroundColor = 'white'
     
-    hour15.style.border = '2px solid black';
-    hour15.style.borderRadius = '15px';
+    hour15.style.borderRight = '0.5px solid black';
+    hour15.style.borderBottom = '0.5px solid black';
+    hour15.style.borderRadius = '0px';
+    hour15.style.backgroundColor = 'white'
     
-    hour16.style.border = '2px solid black';
-    hour16.style.borderRadius = '15px';
+    hour16.style.borderRight = '0.5px solid black';
+    hour16.style.borderBottom = '0.5px solid black';
+    hour16.style.borderRadius = '0px';
+    hour16.style.backgroundColor = 'white'
     
-    hour17.style.border = '2px solid black';
-    hour17.style.borderRadius = '15px';
+    hour17.style.borderRight = '0.5px solid black';
+    hour17.style.borderBottom = '0.5px solid black';
+    hour17.style.borderRadius = '0px';
+    hour17.style.backgroundColor = 'white'
     
-    hour18.style.border = '2px solid black';
-    hour18.style.borderRadius = '15px';
+    hour18.style.borderRight = '0.5px solid black';
+    hour18.style.borderBottom = '0.5px solid black';
+    hour18.style.borderRadius = '0px';
+    hour18.style.backgroundColor = 'white'
     
-    hour19.style.border = '2px solid black';
-    hour19.style.borderRadius = '15px';
+    hour19.style.borderRight = '0.5px solid black';
+    hour19.style.borderBottom = '0.5px solid black';
+    hour19.style.borderRadius = '0px';
+    hour19.style.backgroundColor = 'white'
     
-    hour20.style.border = '2px solid black';
-    hour20.style.borderRadius = '15px';
+    hour20.style.borderRight = '0.5px solid black';
+    hour20.style.borderBottom = '0.5px solid black';
+    hour20.style.borderRadius = '0px';
+    hour20.style.backgroundColor = 'white'
     
-    hour21.style.border = '2px solid black';
-    hour21.style.borderRadius = '15px';
+    hour21.style.borderRight = '0.5px solid black';
+    hour21.style.borderBottom = '0.5px solid black';
+    hour21.style.borderRadius = '0px';
+    hour21.style.backgroundColor = 'white'
     
-    hour22.style.border = '2px solid black';
-    hour22.style.borderRadius = '15px';
+    hour22.style.borderRight = '0.5px solid black';
+    hour22.style.borderBottom = '0.5px solid black';
+    hour22.style.borderRadius = '0px';
+    hour22.style.backgroundColor = 'white'
     
-    hour23.style.border = '2px solid black';
-    hour23.style.borderRadius = '15px';
+    hour23.style.borderBottom = '0.5px solid black';
+    hour23.style.borderRadius = '0px';
+    hour23.style.backgroundColor = 'white'
 
     f.addEventListener('click', () => {        
     hour0temp.textContent = data.forecast.forecastday[0].hour[0].temp_f + '°F'; 
