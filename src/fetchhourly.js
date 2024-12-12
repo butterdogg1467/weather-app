@@ -125,7 +125,7 @@ let hour23date = document.querySelector('#hour23date');
 let hour23temp = document.querySelector('#hour23temp');
 
 export default function fetchHourly(){
-    fetch('http://api.weatherapi.com/v1/forecast.json?key=322ddc56463843cfbf520430241307&q=' + search.value + '&aqi=no')
+    fetch('https://api.weatherapi.com/v1/forecast.json?key=322ddc56463843cfbf520430241307&q=' + search.value + '&aqi=no')
     .then(function(response) {
         return response.json();
     })

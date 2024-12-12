@@ -19,7 +19,7 @@ let f= document.querySelector('#f')
 let c = document.querySelector('#c')
 
 export default function fetchWeather(){
-    fetch('http://api.weatherapi.com/v1/current.json?key=322ddc56463843cfbf520430241307&q=' + search.value + '&days=3&aqi=no')
+    fetch('https://api.weatherapi.com/v1/current.json?key=322ddc56463843cfbf520430241307&q=' + search.value + '&days=3&aqi=no')
     .then(function(response) {
         return response.json();
     })

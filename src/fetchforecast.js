@@ -22,7 +22,7 @@ let c = document.querySelector('#c')
 let forecastGroups = document.querySelector('.forecastgroups')
 
 export default function fetchForecast(){
-    fetch('http://api.weatherapi.com/v1/forecast.json?key=322ddc56463843cfbf520430241307&q=' + search.value + '&days=3&aqi=no')
+    fetch('https://api.weatherapi.com/v1/forecast.json?key=322ddc56463843cfbf520430241307&q=' + search.value + '&days=3&aqi=no')
     .then(function(response) {
         return response.json();
     })
